@@ -1,8 +1,28 @@
+/* 
+  npx create-react-app linkedln-clone --template redux
+  yarn start
+  sudo npm install -g firebase-tools
+  firebase
+  yarn add firebase
+  to use the material icons: yarn add @material-ui/icons
+
+  to use effect : yarn add react-flip-move
+    In Post.js, import {forwardRef}
+    Add ref and forwardRef in Post.js
+    In Feed.js , add FlipMove
+*/
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { store } from './app/store';
+
+/* Store 
+  We pass it to the top level component which is index.js to give every component under it
+  access to any variable stored in redux
+*/
+import { store } from './app/store'; 
+
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 
